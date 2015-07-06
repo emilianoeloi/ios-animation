@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Um-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Um" id="BYZ-38-t0r" customClass="UmViewController" customModule="iOS_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller #1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuQ-rx-zTM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD6-94-3mW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Tap me">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showThirdViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Amo-PZ-uCY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQX-lr-yBY">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UD6-94-3mW" firstAttribute="centerX" secondItem="LuQ-rx-zTM" secondAttribute="centerX" id="56e-Zh-U7h"/>
+                            <constraint firstAttribute="centerY" secondItem="LuQ-rx-zTM" secondAttribute="centerY" constant="-9.5" id="FFQ-lB-SAL">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="LuQ-rx-zTM" firstAttribute="top" secondItem="RQX-lr-yBY" secondAttribute="bottom" constant="123" id="wBs-7I-UuO">
+                                <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="LuQ-rx-zTM" firstAttribute="centerX" secondItem="RQX-lr-yBY" secondAttribute="centerX" constant="-21.5" id="wOo-zD-GIz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="LuQ-rx-zTM" secondAttribute="centerX" constant="-74" id="wu9-gn-Uwl">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="UD6-94-3mW" firstAttribute="top" secondItem="LuQ-rx-zTM" secondAttribute="bottom" constant="124" id="zcG-q9-zws">
+                                <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LuQ-rx-zTM"/>
+                                <exclude reference="UD6-94-3mW"/>
+                                <exclude reference="RQX-lr-yBY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FFQ-lB-SAL"/>
+                                <exclude reference="wBs-7I-UuO"/>
+                                <exclude reference="wOo-zD-GIz"/>
+                                <exclude reference="wu9-gn-Uwl"/>
+                                <exclude reference="56e-Zh-U7h"/>
+                                <exclude reference="zcG-q9-zws"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LuQ-rx-zTM"/>
+                                <include reference="UD6-94-3mW"/>
+                                <include reference="RQX-lr-yBY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FFQ-lB-SAL"/>
+                                <include reference="wBs-7I-UuO"/>
+                                <include reference="wOo-zD-GIz"/>
+                                <include reference="wu9-gn-Uwl"/>
+                                <include reference="56e-Zh-U7h"/>
+                                <include reference="zcG-q9-zws"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblMessage" destination="RQX-lr-yBY" id="sD0-4X-ieB"/>
+                        <segue destination="0kt-Sj-G6o" kind="custom" identifier="idFirstSegue" customClass="FirstCustomSegue" customModule="iOS_Animation" customModuleProvider="target" id="hql-lC-tO4"/>
+                        <segue destination="k1u-WU-756" kind="custom" identifier="idSecondSegue" customClass="SecondCustomSegue" customModule="iOS_Animation" customModuleProvider="target" id="Yr9-eo-Hyj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="458.25"/>
+        </scene>
+        <!--Dois-->
+        <scene sceneID="r78-g7-OCB">
+            <objects>
+                <viewController title="Dois" id="0kt-Sj-G6o" customClass="DoisViewController" customModule="iOS_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ntf-JH-w1n"/>
+                        <viewControllerLayoutGuide type="bottom" id="DLw-EX-uMD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a1k-aY-CdV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController #2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zj-xh-dK1">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKV-cu-PBa">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="qKV-cu-PBa" secondAttribute="centerX" id="0Ji-oa-gpb"/>
+                            <constraint firstItem="2zj-xh-dK1" firstAttribute="top" secondItem="qKV-cu-PBa" secondAttribute="bottom" constant="112" id="R5I-SL-5P6">
+                                <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="2zj-xh-dK1" secondAttribute="centerX" constant="-41.5" id="UvP-nN-anh">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="2zj-xh-dK1" secondAttribute="centerY" constant="62.5" id="zW3-N8-k7a">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2zj-xh-dK1"/>
+                                <exclude reference="qKV-cu-PBa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0Ji-oa-gpb"/>
+                                <exclude reference="R5I-SL-5P6"/>
+                                <exclude reference="UvP-nN-anh"/>
+                                <exclude reference="zW3-N8-k7a"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2zj-xh-dK1"/>
+                                <include reference="qKV-cu-PBa"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0Ji-oa-gpb"/>
+                                <include reference="R5I-SL-5P6"/>
+                                <include reference="UvP-nN-anh"/>
+                                <include reference="zW3-N8-k7a"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblMessage" destination="qKV-cu-PBa" id="tb8-Jn-TPB"/>
+                        <segue destination="IEm-Bi-sWf" kind="unwind" identifier="idFirstSegueUnwind" unwindAction="returnFromSegueActions:" id="adH-rt-TfP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRz-ub-vrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IEm-Bi-sWf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="1170.75"/>
+        </scene>
+        <!--Três-->
+        <scene sceneID="bPU-9W-90W">
+            <objects>
+                <viewController title="Três" id="k1u-WU-756" customClass="TresViewController" customModule="iOS_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3o4-ts-1wx"/>
+                        <viewControllerLayoutGuide type="bottom" id="CUx-Nt-lxe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="caZ-Ua-1mI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController #3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJw-IX-fSq">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="HJw-IX-fSq" secondAttribute="centerX" id="KCB-9E-gdA"/>
+                            <constraint firstAttribute="centerY" secondItem="HJw-IX-fSq" secondAttribute="centerY" id="hj3-cX-BzZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="HJw-IX-fSq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="KCB-9E-gdA"/>
+                                <exclude reference="hj3-cX-BzZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="HJw-IX-fSq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="KCB-9E-gdA"/>
+                                <include reference="hj3-cX-BzZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <segue destination="VbW-Ow-rqT" kind="unwind" identifier="idSecondSegueUnwind" unwindAction="returnFromSegueActions:" id="kSV-3B-pmN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1iK-UU-Yv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VbW-Ow-rqT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="453.75"/>
+        </scene>
+    </scenes>
+</document>
