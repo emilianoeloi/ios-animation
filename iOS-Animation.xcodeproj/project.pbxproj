@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		ACCCAA901B49DF700012B6C7 /* SecondCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCAA8F1B49DF700012B6C7 /* SecondCustomSegue.swift */; };
 		ACCCAA921B49E09A0012B6C7 /* SecondCustomSegueUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCAA911B49E09A0012B6C7 /* SecondCustomSegueUnwind.swift */; };
+		ACCCAA941B4A024E0012B6C7 /* ThirdCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCAA931B4A024E0012B6C7 /* ThirdCustomSegue.swift */; };
+		ACCCAA961B4A04370012B6C7 /* QuatroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCAA951B4A04370012B6C7 /* QuatroViewController.swift */; };
+		ACCCAA981B4A0E670012B6C7 /* ThirdCustomSegueUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCAA971B4A0E670012B6C7 /* ThirdCustomSegueUnwind.swift */; };
 		ACE9309E1B4853EA001A8F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9309D1B4853EA001A8F9E /* AppDelegate.swift */; };
 		ACE930A31B4853EA001A8F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE930A11B4853EA001A8F9E /* Main.storyboard */; };
 		ACE930A51B4853EA001A8F9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE930A41B4853EA001A8F9E /* Images.xcassets */; };
@@ -34,6 +37,9 @@
 /* Begin PBXFileReference section */
 		ACCCAA8F1B49DF700012B6C7 /* SecondCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondCustomSegue.swift; path = Segue/SecondCustomSegue.swift; sourceTree = "<group>"; };
 		ACCCAA911B49E09A0012B6C7 /* SecondCustomSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondCustomSegueUnwind.swift; path = Segue/SecondCustomSegueUnwind.swift; sourceTree = "<group>"; };
+		ACCCAA931B4A024E0012B6C7 /* ThirdCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdCustomSegue.swift; path = Segue/ThirdCustomSegue.swift; sourceTree = "<group>"; };
+		ACCCAA951B4A04370012B6C7 /* QuatroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuatroViewController.swift; path = ViewController/QuatroViewController.swift; sourceTree = "<group>"; };
+		ACCCAA971B4A0E670012B6C7 /* ThirdCustomSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdCustomSegueUnwind.swift; path = Segue/ThirdCustomSegueUnwind.swift; sourceTree = "<group>"; };
 		ACE930981B4853EA001A8F9E /* iOS-Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE9309C1B4853EA001A8F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACE9309D1B4853EA001A8F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 				ACE930BE1B486176001A8F9E /* UmViewController.swift */,
 				ACE930C01B486186001A8F9E /* DoisViewController.swift */,
 				ACE930C21B486194001A8F9E /* TresViewController.swift */,
+				ACCCAA951B4A04370012B6C7 /* QuatroViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -142,6 +149,8 @@
 				ACE930C71B4870EA001A8F9E /* FirstCustomSegueUnwind.swift */,
 				ACCCAA8F1B49DF700012B6C7 /* SecondCustomSegue.swift */,
 				ACCCAA911B49E09A0012B6C7 /* SecondCustomSegueUnwind.swift */,
+				ACCCAA931B4A024E0012B6C7 /* ThirdCustomSegue.swift */,
+				ACCCAA971B4A0E670012B6C7 /* ThirdCustomSegueUnwind.swift */,
 			);
 			name = CustomSegue;
 			sourceTree = "<group>";
@@ -248,11 +257,14 @@
 			files = (
 				ACE930BF1B486176001A8F9E /* UmViewController.swift in Sources */,
 				ACE930C61B486EE7001A8F9E /* FirstCustomSegue.swift in Sources */,
+				ACCCAA961B4A04370012B6C7 /* QuatroViewController.swift in Sources */,
 				ACE930C81B4870EA001A8F9E /* FirstCustomSegueUnwind.swift in Sources */,
 				ACE930C11B486186001A8F9E /* DoisViewController.swift in Sources */,
 				ACE930C31B486194001A8F9E /* TresViewController.swift in Sources */,
+				ACCCAA981B4A0E670012B6C7 /* ThirdCustomSegueUnwind.swift in Sources */,
 				ACCCAA921B49E09A0012B6C7 /* SecondCustomSegueUnwind.swift in Sources */,
 				ACE9309E1B4853EA001A8F9E /* AppDelegate.swift in Sources */,
+				ACCCAA941B4A024E0012B6C7 /* ThirdCustomSegue.swift in Sources */,
 				ACCCAA901B49DF700012B6C7 /* SecondCustomSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

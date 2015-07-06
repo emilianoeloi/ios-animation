@@ -4,6 +4,57 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
+        <!--Quatro-->
+        <scene sceneID="9p2-wE-YsK">
+            <objects>
+                <viewController title="Quatro" id="c2m-T2-rkA" customClass="QuatroViewController" customModule="iOS_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Hj-LA-bAr"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKB-gn-pmg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="22z-G8-X43">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController #4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Om8-1C-NuR">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Om8-1C-NuR" secondAttribute="centerX" id="RVJ-Do-py0"/>
+                            <constraint firstAttribute="centerY" secondItem="Om8-1C-NuR" secondAttribute="centerY" id="h98-AY-EPq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Om8-1C-NuR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="RVJ-Do-py0"/>
+                                <exclude reference="h98-AY-EPq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Om8-1C-NuR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="RVJ-Do-py0"/>
+                                <include reference="h98-AY-EPq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <segue destination="Q9o-7Y-WWH" kind="unwind" identifier="idThirdSegueUnwind" unwindAction="returnFromSegueActions:" id="LCe-bD-YKy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bv8-hh-Xv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Q9o-7Y-WWH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-102" y="-273"/>
+        </scene>
         <!--Um-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -93,6 +144,7 @@
                         <outlet property="lblMessage" destination="RQX-lr-yBY" id="sD0-4X-ieB"/>
                         <segue destination="0kt-Sj-G6o" kind="custom" identifier="idFirstSegue" customClass="FirstCustomSegue" customModule="iOS_Animation" customModuleProvider="target" id="hql-lC-tO4"/>
                         <segue destination="k1u-WU-756" kind="custom" identifier="idSecondSegue" customClass="SecondCustomSegue" customModule="iOS_Animation" customModuleProvider="target" id="Yr9-eo-Hyj"/>
+                        <segue destination="c2m-T2-rkA" kind="custom" identifier="idThirdSegue" customClass="ThirdCustomSegue" customModule="iOS_Animation" customModuleProvider="target" id="HKj-KV-T3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

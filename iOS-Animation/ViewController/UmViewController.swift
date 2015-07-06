@@ -19,10 +19,18 @@ class UmViewController: UIViewController {
         var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showSecondViewController")
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Up
         self.view.addGestureRecognizer(swipeGestureRecognizer)
+        
+        var swipeGestureRecognizer2: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showFourthViewController")
+        swipeGestureRecognizer2.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeGestureRecognizer2)
     }
     
     func showSecondViewController() {
         self.performSegueWithIdentifier("idFirstSegue", sender: self)
+    }
+    
+    func showFourthViewController() {
+        self.performSegueWithIdentifier("idThirdSegue", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +46,14 @@ class UmViewController: UIViewController {
             UIView.animateWithDuration(1.0, animations: { () -> Void in
                 self.view.backgroundColor = originalColor
             })
-        }else{
+        }else if sender.identifier == "idThirdSegueUnwind" {
+            let originalColor = self.view.backgroundColor
+            self.view.backgroundColor = UIColor.redColor()
+            
+            UIView.animateWithDuration(1.0, animations: { () -> Void in
+                self.view.backgroundColor = originalColor
+            })
+        } else {
             self.lblMessage.text = "Welcome back!"
         }
     }
