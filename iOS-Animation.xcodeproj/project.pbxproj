@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACB82B221B55653A0083DB5C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB82B211B55653A0083DB5C /* AVFoundation.framework */; };
 		ACCCAA901B49DF700012B6C7 /* SecondCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCAA8F1B49DF700012B6C7 /* SecondCustomSegue.swift */; };
 		ACCCAA921B49E09A0012B6C7 /* SecondCustomSegueUnwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCAA911B49E09A0012B6C7 /* SecondCustomSegueUnwind.swift */; };
 		ACCCAA941B4A024E0012B6C7 /* ThirdCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCCAA931B4A024E0012B6C7 /* ThirdCustomSegue.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACB82B211B55653A0083DB5C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ACCCAA8F1B49DF700012B6C7 /* SecondCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondCustomSegue.swift; path = Segue/SecondCustomSegue.swift; sourceTree = "<group>"; };
 		ACCCAA911B49E09A0012B6C7 /* SecondCustomSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondCustomSegueUnwind.swift; path = Segue/SecondCustomSegueUnwind.swift; sourceTree = "<group>"; };
 		ACCCAA931B4A024E0012B6C7 /* ThirdCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdCustomSegue.swift; path = Segue/ThirdCustomSegue.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB82B221B55653A0083DB5C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		ACE9308F1B4853E9001A8F9E = {
 			isa = PBXGroup;
 			children = (
+				ACB82B211B55653A0083DB5C /* AVFoundation.framework */,
 				ACE9309A1B4853EA001A8F9E /* iOS-Animation */,
 				ACE930B01B4853EA001A8F9E /* iOS-AnimationTests */,
 				ACE930991B4853EA001A8F9E /* Products */,

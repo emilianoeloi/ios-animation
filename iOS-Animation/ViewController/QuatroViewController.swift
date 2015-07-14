@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class QuatroViewController: UIViewController {
 
@@ -44,6 +45,10 @@ class QuatroViewController: UIViewController {
     }
     
     func loadWebview(){
+        var error:NSErrorPointer = NSErrorPointer();
+        var success:Bool = AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: error)
+        
+        
         var fullURL:String = "http://www.globo.com"
         var url:NSURL = NSURL(string: fullURL)!
         var request:NSURLRequest = NSURLRequest(URL: url)
