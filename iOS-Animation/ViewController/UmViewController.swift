@@ -10,8 +10,11 @@ import UIKit
 
 class UmViewController: UIViewController {
     
+    
+    @IBOutlet weak var verticalSpaceBlock: NSLayoutConstraint!
     @IBOutlet weak var lblMessage: UILabel!
     
+    @IBOutlet weak var subeditoria: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,22 @@ class UmViewController: UIViewController {
         var swipeGestureRecognizer2: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showFourthViewController")
         swipeGestureRecognizer2.direction = UISwipeGestureRecognizerDirection.Left
         self.view.addGestureRecognizer(swipeGestureRecognizer2)
+        
+        var subeditoriaRecgnizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "moveDown")
+        subeditoriaRecgnizer.direction = UISwipeGestureRecognizerDirection.Down
+        subeditoria.addGestureRecognizer(subeditoriaRecgnizer)
+    }
+    
+    func moveDown(){
+        self.view.layoutIfNeeded()
+        
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            ///self.subeditoria.frame = CGRectOffset(self.subeditoria.frame, 0.0, 50.0)
+            self.verticalSpaceBlock.constant += 50
+            self.view.layoutIfNeeded()
+            }) { (Finished) -> Void in
+                
+        }
     }
     
     func showSecondViewController() {

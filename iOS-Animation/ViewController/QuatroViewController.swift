@@ -10,11 +10,15 @@ import UIKit
 
 class QuatroViewController: UIViewController {
 
+    @IBOutlet weak var webview: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showFirstViewController")
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeGestureRecognizer)
+        
+        self.loadWebview()
+    
     }
     
     func showFirstViewController() {
@@ -37,6 +41,13 @@ class QuatroViewController: UIViewController {
         }
         
         return super.segueForUnwindingToViewController(toViewController, fromViewController: fromViewController, identifier: identifier)
+    }
+    
+    func loadWebview(){
+        var fullURL:String = "http://www.globo.com"
+        var url:NSURL = NSURL(string: fullURL)!
+        var request:NSURLRequest = NSURLRequest(URL: url)
+        self.webview.loadRequest(request)
     }
     
 
